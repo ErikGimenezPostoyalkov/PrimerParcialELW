@@ -21,6 +21,6 @@ window.onload = async () => {
 async function getAllWizards() {
     const response = await fetch(`${HPAPI_BASE_URL}/Wizards`);
     const data = await response.json();
-    return data;
+    return data.wizard;
 }
 
