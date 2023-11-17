@@ -11,8 +11,8 @@ window.onload = async () => {
       const mainHtmlElement = document.getElementById('main');
       const newElement = document.createElement('div');
       newElement.innerHTML = `
-        <h2>${wizard.firstname}</h2>
-        <h2>${wizard.lastname}</h2>
+        <p>${wizard.firstname}</p>
+        <p>${wizard.lastname}</p>
       `;
       mainHtmlElement.appendChild(newElement);
     }
