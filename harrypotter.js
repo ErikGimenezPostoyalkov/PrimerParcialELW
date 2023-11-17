@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const HPAPI_BASE_URL = 'https://wizard-world-api.herokuapp.com';
 
 window.onload = async () => {
@@ -12,13 +11,16 @@ window.onload = async () => {
       const mainHtmlElement = document.getElementById('main');
       const newElement = document.createElement('div');
       newElement.innerHTML = `
-        <h2>${film.title}</h2>
-        <p>${film.opening_crawl}</p>
+        <h2>${Wizards.FirstName}</h2>
+        <h2>${Wizards.LastName}</h2>
       `;
       mainHtmlElement.appendChild(newElement);
     }
-  };
-=======
-const HPAPI_BASE_URL = 'https://wizard-world-api.herokuapp.com';
+};
 
->>>>>>> 58821a594977d8bc2c9ee96ef67d674c26fbc9e4
+async function getAllWizards() {
+    const response = await fetch(`${HPAPI_BASE_URL}/Wizards`);
+    const data = await response.json();
+    return data.results;
+}
+
