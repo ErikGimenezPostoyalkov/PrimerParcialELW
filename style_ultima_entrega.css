@@ -1,0 +1,50 @@
+#titulo{
+    text-align: center;
+    padding: 50px;
+    font-size: 100px;
+    background-color: rgb(106, 93, 119);
+}
+
+/* Estilo Personajes */
+.wizards {
+    text-decoration: underline;
+}
+
+/* Estilo Botones */
+button {
+    padding: 3px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #33b929;
+}
+
+/* Estilo de las casas */
+.house-image {
+    width: 200px;
+    height: auto;
+}
+
+.house-image:hover {
+    border: 2px solid #FFD700;
+}
+
+#casas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Estilo Elementos Destacados*/
+.floating-info {
+    display: none;
+    position: sticky;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border: 1px solid #000;
+    float: right;
+}
